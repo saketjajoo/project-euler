@@ -56,3 +56,9 @@ def get_all_permutations(l, fixed_len = True):
         for i in range(1, len(l) + 1):
             permutations.extend(list(itertools.permutations(l, i)))
         return permutations
+
+def get_triangle_numbers(n):
+    result = []
+    for i in range(1, n + 1):
+        result.append((i * (i + 1)) // 2)
+    return result
