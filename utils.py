@@ -62,3 +62,6 @@ def get_triangle_numbers(n):
     for i in range(1, n + 1):
         result.append((i * (i + 1)) // 2)
     return result
+
+def is_perfect_square(n):
+    return math.ceil(math.sqrt(n)) == math.floor(math.sqrt(n))
